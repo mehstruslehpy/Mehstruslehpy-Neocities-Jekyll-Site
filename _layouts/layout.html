@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+		<!-- MathJax-->
+		 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+		<!-- My CSS-->
+		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+    	<title>{{ page.title }}</title>
+	</head>
+  
+
+  <body>
+	<div class="jumbotron">
+  	<!-- for globally navigating around -->
+		<div class="row">
+			<div class="col-sm-3"><a href="/projects.html">|projects|</a></div>
+			<div class="col-sm-3"><a href="/useful.html">|useful|</a></div>
+			<div class="col-sm-3"><a href="/fun.html">|fun|</a></div>
+			<div class="col-sm-3"><a href="/index.html">|posts|</a></div>
+		</div>
+	</div>
+	<br>
+  	<!-- the main content -->
+	<div class="container-fluid">
+	    <header>
+	      <!--<h1><a href="/">{{ page.title }}</a></h1>-->
+	      <h1>{{ page.title }}</h1>
+	    </header>
+
+	    <section>
+			{{ content }}
+	    </section>
+	</div>
+	<div class="col-sm-4"><a href="/index.html">|The Main Site|</a></div>
+	<div class="col-sm-4"><a href="https://github.com/mehstruslehpy">|My Github Page|</a></div>
+	<div class="col-sm-4"><a href="/oldsite/index.html">|The Old Site|</a></div>
+	 
+  </body>
+</html>

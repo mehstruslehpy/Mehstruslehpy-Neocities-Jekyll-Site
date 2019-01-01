@@ -1,0 +1,25 @@
+<html><head>
+	<!-- rexprizer script stuff -->
+	<script type="text/javascript" src="rexprizer.js"></script>	
+	<!-- Initial Math Jax Load-->
+	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+	<body><h1>Integral Session: </h1>
+	Expressions: <input id="expression" type="text" value="{ X }^{ X };( X + X );( X - X );( X \cdot  X );\frac{ X }{ X };\sqrt[ C ]{ X };tan( X );cos( X );sin( X );( X \cdot C )"><br>
+	Variables: <input id="variables" type="text" value="x"><br>
+	Depth Of Recursion: <input id="depth" type="number" value="1"> The maximum depth of recursion in building an expression<br>
+	Minimum Constant Value: <input id="minimum" type="number" value="-50"> The minimum value for all constants<br>
+	Maximum Constant Value: <input id="maximum" type="number" value="50"> The maximum value for all constants<br>
+	Starting Seed: <input id="seed" type="text" value="\int  X  dx"> The starting value to generate expressions from<br>
+	Action: <input id="action" type="text" value=" "> Optionally generates a link to wolfram alpha using this command.<br>
+	<button onclick="handleInput()">Generate</button>
+	<h2>Calculate \( \int f(x) dx\) of the following:</h2>
+
+	<font size="5">
+		<div id="outputexpressions"></div>
+	</font>
+	
+	<h2>Refresh to reset the page.</h2>
+<a href="./rexpr.html">main page</a>
+</body></html>

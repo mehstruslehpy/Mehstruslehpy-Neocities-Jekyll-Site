@@ -1,0 +1,61 @@
+---
+layout: layout
+title: "Links I Think Are Useful:" 
+---
+<br>
+<div class="content">
+	
+	{%comment%}	
+	{%for use in site.data.useful	%}
+		{%for outvar in use%}
+			outvar: {{outvar}} <br><br>
+			{%for invar in outvar%}
+				invar.name: {{invar.name}} <br><br>
+				invar.link: {{invar.link}} <br><br>
+				invar.description: {{invar.description}} <br><br>
+			{%endfor%}
+		{%endfor%}
+	{%endfor%}
+	{%endcomment%}
+
+<div class="content-collapse">	
+<button data-toggle="collapse" data-target="#techlinks">Technology Links</button>
+	<div id="techlinks" class="collapse">
+	{%for var in site.data.useful.tech	%}
+	<ul>
+		<div class="useful-style">	
+				<li><a href="{{ var.link }}">{{ var.name }}:</a>&emsp;{{var.description}}</li>
+		</div>	
+	</ul>	
+	{% endfor %}
+</div>
+</div>
+
+<div class="content-collapse">	
+<button data-toggle="collapse" data-target="#mathanded">Math And Educational Links</button>
+	<div id="mathanded" class="collapse">
+	{%for var in site.data.useful.mathanded %}
+	<ul>
+		<div class="useful-style">	
+				<li><a href="{{ var.link }}">{{ var.name }}:</a>&emsp;{{var.description}}</li>
+		</div>	
+	</ul>	
+	{% endfor %}
+</div>
+</div>
+
+<div class="content-collapse">	
+<button data-toggle="collapse" data-target="#creative">Creative Links</button>
+	<div id="creative" class="collapse">
+	{%for var in site.data.useful.creative%}
+	<ul>
+		<div class="useful-style">	
+				<li><a href="{{ var.link }}">{{ var.name }}:</a>&emsp;{{var.description}}</li>
+		</div>	
+	</ul>	
+	{% endfor %}
+</div>
+</div>
+
+<br>
+</div>

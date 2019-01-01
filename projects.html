@@ -1,0 +1,31 @@
+---
+layout: layout
+title: "Some Projects I Have Worked On:"
+---
+<br>
+<div class="content">
+	
+	{% for proj in site.projects %}
+		<div class="project-style">	
+			<h3>
+				<a href="{{ proj.projectlink }}">{{ proj.projectname }}</a>
+			</h3>
+			
+			<div class="project-shortdescription">
+				<p>{{proj.projectdescription}}</p>
+			</div>
+
+			<div class="project-longdescription">
+					<div class="content-collapse">
+				<button data-toggle="collapse" data-target="#{{proj.projectid}}">More Info</button>
+				<div id="{{proj.projectid}}" class="collapse">
+					{{proj.content}}
+					</div>
+				</div>
+			</div>
+		</div>	
+		<br>
+
+	{% endfor %}
+
+</div>

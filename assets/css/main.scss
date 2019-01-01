@@ -1,0 +1,90 @@
+---
+#this is the main scss file
+---
+//variables
+$textyellow:#FFCC00;
+
+html,body
+{
+  //common styling
+	background-color:black;
+	font-family:sans-serif monospace;
+	font:monospace;
+	color:$textyellow;
+	//styling for links
+  a	
+  {
+    	//background-color:black;
+		color:#f5f7cd;
+		text-decoration:none;
+    	&:link 
+		{
+			color:#b7b76a; 
+		}
+		&:visited 
+		{
+			color:darkgray; 
+		}
+		&:hover 
+		{
+			color:red; 
+		}
+	}
+	.jumbotron
+	{
+		background-color:#4f4e3a;	
+		//outline: 2px solid-black;
+		border: 10px solid;
+		border-color: #878952;
+		text-align:center;
+		div.col-sm-3
+		{ 
+			font-size:2em;
+			border: 10px;
+		}
+		a
+		{
+			background-color:#4f4e3a;
+		}
+	}
+	
+	//styling for code snippets
+	.code-filename
+	{
+    border-radius: 5px 5px 0px 0px;
+		background-color:#292b26;
+		border-color: black;
+		border: 10px;
+	}
+	pre,code
+	{
+      border-radius: 0px 0px 5px 5px;
+			background-color:#434739;
+			color:black;
+	}
+
+  //styling for collapse
+  //the part that expands/collapses
+  button
+  {
+	  background-color:black;
+    color: $textyellow;
+    border: 2px solid $textyellow;
+    border-radius: 5px;
+  } 
+  .content-collapse
+  {
+	  padding: 1em;
+    background-color: black;
+		color: $textyellow;
+    //color: $textyellow;
+    //border: 5px solid #434739;
+    //border-radius: 5px;
+  } 
+  .project-style
+  {
+    padding: .75em;
+    border: 5px solid #434739;
+    border-radius: 5px;
+  }
+}

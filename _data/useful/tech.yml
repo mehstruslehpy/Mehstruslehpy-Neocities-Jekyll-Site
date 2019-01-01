@@ -1,0 +1,24 @@
+- name: lainchan
+  link: https://lainchan.org/
+  description: An image board focused on cyberpunk and technology related content, frequently features interesting programming posts.
+- name: hackaday 
+  link: https://hackaday.com/
+  description: A blog which contains many interesting hacks related to hardware and software.
+- name: archlinux
+  link: https://www.archlinux.org/
+  description: The archwiki is a very useful source of configuration/installation info for lots of linux software.
+- name: /r/prog on reddit
+  link: https://www.reddit.com/r/programming/
+  description: A subreddit containg lots of interesting programming news and posts.
+- name: /r/linux on reddit
+  link: https://www.reddit.com/r/linux/
+  description: A subreddit containg lots of interesting linux news and posts.
+- name: libgen
+  link: http://gen.lib.rus.ec/
+  description: Books.
+- name: w3schools
+  link: http://www.w3schools.com/
+  description: I tend to look up lots of html css and js stuff here.
+- name: jsfiddle
+  link: https://www.jsfiddle.net/
+  description: A good place to demo/test simple web projects for yourself.

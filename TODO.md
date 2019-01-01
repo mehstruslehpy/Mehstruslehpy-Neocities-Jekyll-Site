@@ -1,0 +1,2 @@
+- add jax support
+- add more posts

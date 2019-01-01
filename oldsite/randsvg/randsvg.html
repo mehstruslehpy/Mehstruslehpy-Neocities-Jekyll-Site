@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<meta http-equiv="refresh" content="5"> <!-- Force the page to reload every five seconds -->
+		<script type="text/javascript" src="rexprizer.js"></script>	<!-- load the rexprizer script modified to generate svg files -->
+		<script>
+			window.onload=BuildSvg; //set the svg building function to run on page load
+		</script>
+		<!-- use css to fill the page with the svg tag, this came from SO -->
+		<style>
+			html, body { margin:0; padding:0; overflow:hidden }
+			svg { background-color:black; position:fixed; top:0; left:0; height:100%; width:100% }
+		</style>
+	</head>
+ <div id="outputexpressions"></div> <!-- generated svg code gets appended to this div-->
+</html>

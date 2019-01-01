@@ -1,0 +1,58 @@
+  a:link {color:white; background-color:black; text-decoration:none;}
+  a:visited {color:darkgray; background-color:black; text-decoration:none;}
+  a:hover {color:red; background-color:black; text-decoration:none;}
+  html {
+	font-family: sans-serif monospace;
+	font: monospace;
+	color: #ffcc00;
+	background-color: black;
+  }
+  input[type=button] {
+	background-color: black;
+	color: #ffcc00;
+    border: 2px solid #ffcc00;
+    border-radius: 4px;
+  }
+  input {
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+    border-radius: 4px;
+    background-color: black;
+  }
+  textarea {
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+    border-radius: 4px;
+    background-color: black;
+    width: 80%;
+  }
+  input:hover, textarea:hover {
+    color: red;
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: black;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+    border-radius: 4px;
+    background-color: black;
+  }
+  select:hover {
+    color: red;
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: black;
+  }
+  #newplaceform {
+    float: right;
+    width: 25%;
+  }
+  #map-canvas {
+    width: 70%;
+    height: 500px;
+    float: left;
+  }

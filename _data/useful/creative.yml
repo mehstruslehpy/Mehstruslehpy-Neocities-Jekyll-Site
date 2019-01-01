@@ -1,0 +1,24 @@
+- name: GIMP
+  link: ttps://www.gimp.org/
+  description: The GNU image manipulation program, a FOSS image editor.
+- name: Ardour
+  link: ttps://ardour.org/
+  description: A FOSS digital audio workstation
+- name: LMMS
+  link: ttps://lmms.io/
+  description: Another FOSS digital audio workstation
+- name: ThreeJS
+  link: ttps://threejs.org/editor/
+  description: A cool library/api fpr creating 3d graphics in the browser.
+- name: onlinesequencer.net
+  link: ttps://www./onlinesequencer.net/
+  description: An online midi sequencer.
+- name: Vocaroo
+  link: ttp://vocaroo.com/
+  description: A website for posting short audio clips/files.
+- name: Imgur
+  link: ttps://imgur.com/upload
+  description: A website for posting and sharing images.
+- name: Soundcloud
+  link: ttps://soundcloud.com/
+  description: A website for posting audio and music.

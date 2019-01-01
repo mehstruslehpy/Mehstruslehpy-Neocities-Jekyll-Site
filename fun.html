@@ -1,0 +1,17 @@
+---
+layout: layout
+title: "Some Fun Stuff:" 
+---
+<br>
+<div class="content">
+	
+	{% for var in site.fun %}
+		<div class="fun-style">	
+			<h3>
+				<a href="{{ var.url }}.html">{{ var.title }}</a>
+			</h3>
+				{{var.shortdescription}}
+		</div>	
+	{% endfor %}
+<br>
+</div>

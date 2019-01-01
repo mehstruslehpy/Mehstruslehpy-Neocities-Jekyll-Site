@@ -1,0 +1,9 @@
+- name: Geogebra
+  link: https://www.geogebra.org/apps/
+  description: An online geometry utility.
+- name: Interactive Math Site List
+  link: https://www.reddit.com/r/learnmath/comments/w3q6g/list_of_interactive_math_websites/
+  description: A list of interactive math sites from the subreddit /r/math
+- name: List Of Free Online Math Resources
+  link: https://www.reddit.com/r/math/comments/2mkmk0/a_compilation_of_useful_free_online_math_resources/
+  description: A list of free online math resources from the subreddit /r/math
