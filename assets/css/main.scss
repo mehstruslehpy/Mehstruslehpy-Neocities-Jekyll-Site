@@ -11,13 +11,14 @@ html,body
 	font-family:sans-serif monospace;
 	font:monospace;
 	color:$textyellow;
-	//styling for links
-  a	
+  padding-bottom: 70px;	
+  //styling for links
+  a
   {
-    	//background-color:black;
+    //background-color:black;
 		color:#f5f7cd;
 		text-decoration:none;
-    	&:link 
+    &:link 
 		{
 			color:#b7b76a; 
 		}
@@ -30,6 +31,21 @@ html,body
 			color:red; 
 		}
 	}
+	.navbar,.navbar-fixed-bottom,.navbar-toggler
+  {
+  	background-color:#4f4e3a;	
+		//outline: 2px solid-black;
+		border: .25em solid;
+		border-color: #878952;
+    font-size: 1em;
+    //.navbar-brand
+    .special-navtext
+    {
+      font-size: 1.5em;
+			color:#b7b76a; 
+    }
+		//text-align:center;
+  }
 	.jumbotron
 	{
 		background-color:#4f4e3a;	
@@ -62,7 +78,6 @@ html,body
 			background-color:#434739;
 			color:black;
 	}
-
   //styling for collapse
   //the part that expands/collapses
   button
