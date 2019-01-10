@@ -1,2 +1,3 @@
-- add jax support
+- add mathjax support
 - add more posts
+- Do I want the footer to follow the user around like that?

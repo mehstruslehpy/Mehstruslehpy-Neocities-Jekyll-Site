@@ -1,0 +1,35 @@
+<html><head>
+	<!-- rexprizer script stuff -->
+	<script type="text/javascript" src="rexprizer.js"></script>	
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+	<body><h1>Exprtest Session: </h1>
+	Build formulas suitable for my prover.<br>
+	<textarea id="expression" type="text">( X v X );( X & X );( X -> X );~ X ; X </textarea>
+	<br>
+	<h2>Variables:</h2>
+	A list of variable symbols with no spaces.
+	<br>
+	<textarea id="variables" type="text">ABCDEFGHIJKLMNOPQRSTUVWXYZ</textarea>
+	<br>
+	<h2>Misc:</h2>
+	Depth Of Recursion: <input id="depth" type="number" value="2"> The maximum depth of recursion in building an expression.<br>
+	<div id="minimum" type="number" value="0">
+	<div id="maximum" type="number" value="0">
+	Starting Seed: <input id="seed" type="text" value=" X "> The starting value to generate expressions from.<br>
+	<button onclick="handleInputNoMarkupNoWolfram()">Generate</button>
+	<h2>Output:</h2>
+	<font size="5">
+		<div id="outputexpressions"></div>
+	</font>
+	
+	<h2>Refresh to reset the page.</h2>
+<a href="./rexpr.html">main page</a>
+<style>
+textarea{
+ 	width: 75%;
+	height: 50px;
+	resize: both;
+}
+</style>
+</body></html>

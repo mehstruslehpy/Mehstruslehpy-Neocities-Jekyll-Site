@@ -1,0 +1,46 @@
+<html><head>
+	<!-- rexprizer script stuff -->
+	<script type="text/javascript" src="rexprizer.js"></script>	
+	<!-- Initial Math Jax Load-->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+	<body><h1>Rexprizer: </h1>
+	A program which builds randomly generated mathematical expressions based on your specifications.
+	
+	<h2>Expressions:</h2> 
+	Do not put an ending semicolon.
+	Do not leave any whitespace. 
+	A space padded X will be replaced by one of the listed expressions or variables, a space padded C will be replaced by a constant, a space padded V will be replaced with a variable without expansion.
+	<textarea id="expression" type="text">{ X }^{ C };( X + X );( X \cdot  X );\frac{ X }{ X };( X - X );sin( X );cos( X );tan( X );csc( X );sec( X );cot( X );sinh( X );cosh( X );tanh( X );csch( X );sech( X );coth( X );sinh^{-1}( X );cosh^{-1}( X );tanh^{-1}( X );csch^{-1}( X );sech^{-1}( X );coth^{-1}( X )sin^{-1}( X );cos^{-1}( X );tan^{-1}( X );csc^{-1}( X );sec^{-1}( X );cot^{-1}( X );ln( X );e^{ X };log_{ C }({ X });{ C }^{ X };( X )^\frac{ C }{ C };( X )!;{{ X }\choose{ X }}</textarea>
+	<br>
+	<h2>Variables:</h2>
+	A list of variable symbols with no spaces.
+	<br>
+	<textarea id="variables" type="text">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</textarea>
+	<br>
+	<h2>Misc:</h2>
+	Depth Of Recursion: <input id="depth" type="number" value="2"> The maximum depth of recursion in building an expression.<br>
+	Minimum Constant Value: <input id="minimum" type="number" value="-10"> The minimum value for all constants.<br>
+	Maximum Constant Value: <input id="maximum" type="number" value="10"> The maximum value for all constants.<br>
+	Starting Seed: <input id="seed" type="text" value=" X = 0"> The starting value to generate expressions from.<br>
+	Action: <input id="action" type="text" value="solve"> Optionally generates a link to wolfram alpha using this command.<br>
+	<button onclick="handleInput()">Generate</button>
+	<h2>Output:</h2>
+	<font size="5">
+		<div id="outputexpressions"></div>
+	</font>
+	
+	<h2>Refresh to reset the page.</h2>
+	<!--<h2>Is MathJax Running? \( \forall x : MathJax(x) \)</h2>-->
+<a href="./rexpr.html">main page</a>
+<style>
+textarea{
+ 	width: 75%;
+	height: 50px;
+	resize: both;
+}
+</style>
+</body></html>
