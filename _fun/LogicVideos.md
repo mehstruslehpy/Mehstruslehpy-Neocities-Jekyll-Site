@@ -1,5 +1,5 @@
 ---
-title: "Logic Video List:"
+title: "Logic Video List"
 shortdescription: A list of online videos related to logic.
 layout: fun
 ---
@@ -274,3 +274,10 @@ Some modal logic videos.
 [youtube](https://www.youtube.com/user/Ericpacuit/featured)
 
 [youtube](https://www.youtube.com/watch?v=sW0SQA386p0&list=PLzYF5qTXNbZIsj5DdRjIWMry1TGkZHXSZ)
+
+## Trefor Bazett:
+
+Tons of mathematics videos including some discrete math.
+
+[youtube](https://www.youtube.com/channel/UC9rTsvTxJnx1DNrDA3Rqa6A/featured)
+
