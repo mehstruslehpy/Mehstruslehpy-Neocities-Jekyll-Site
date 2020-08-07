@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Why Programming?
+tag: blog
 ---
 <br>
 A short essay on why I like to program.

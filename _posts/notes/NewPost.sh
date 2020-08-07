@@ -13,5 +13,6 @@ touch $FILE_NAME
 echo "---" >> $FILE_NAME
 echo "layout: post" >> $FILE_NAME
 echo "title: $POST_NAME" >> $FILE_NAME
+echo "tag: notes" >> $FILE_NAME
 echo "---" >> $FILE_NAME
 vim $FILE_NAME

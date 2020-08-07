@@ -1,11 +1,6 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		{% if page.mathjax %}
-		<!-- Mathjax -->
-		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-		{% endif %}
-
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,12 +13,28 @@
 		<!-- My CSS-->
 		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
     	<title>{{ page.title }}</title>
+	{% if page.mathjax %}
+		<!-- Mathjax -->
+		<!--<script type="text/javascript" async
+		  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>-->
+		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+		{% endif %}
 
 
 	</head>
   
 
-<body>
+  <body>
+	<!--<div class="jumbotron">
+		<div class="row">
+			<div class="col-sm-3"><a href="/projects.html">|projects|</a></div>
+			<div class="col-sm-3"><a href="/useful.html">|useful|</a></div>
+			<div class="col-sm-3"><a href="/fun.html">|fun|</a></div>
+			<div class="col-sm-3"><a href="/index.html">|posts|</a></div>
+		</div>
+	</div>
+	<br>-->
 
 <nav class="navbar navbar-expand-lg">
 <!--<nav class="navbar">-->
@@ -37,7 +48,6 @@
 <a class="nav-item nav-link" href="/">|posts|</a>
 <a class="nav-item nav-link" href="/projects.html">|projects|</a>
 <a class="nav-item nav-link" href="/useful.html">|useful|</a>
-<a class="nav-item nav-link" href="/notes.html">|notes|</a>
 <a class="nav-item nav-link" href="/fun.html">|fun|</a>
 </div>
 </div>
@@ -46,6 +56,7 @@
 <!-- the main content -->
 	<div class="container-fluid">
 	    <header>
+	      <!--<h1><a href="/">{{ page.title }}</a></h1>-->
 	      <h1>{{ page.title }}</h1>
 	    </header>
 
@@ -53,10 +64,12 @@
 			{{ content }}
 	    </section>
 	</div>
+
 <div class="navbar fixed-bottom">
 <a href="/index.html">|The Main Site|</a>
 <a href="https://github.com/mehstruslehpy">|My Github Page|</a>
 <a href="/oldsite/index.html">|The Old Site|</a>
 </div>
+
   </body>
 </html>

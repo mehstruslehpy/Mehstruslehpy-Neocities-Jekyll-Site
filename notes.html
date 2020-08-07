@@ -1,0 +1,17 @@
+---
+layout: post 
+title: "Mehstruslehpy Notes:"
+---
+<div class="content">
+  <div class="related">
+    <ul>
+      {% for note in site.posts %}
+			{% if note.tag contains "notes" %}
+      <li>
+				<a href="{{ note.url }}.html">{{ note.title }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>

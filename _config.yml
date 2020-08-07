@@ -1,5 +1,7 @@
 auto: true
-markdown: rdiscount
+markdown: kramdown
+#markdown: rdiscount
+mathjax: true 
 permalink: /:year/:month/:day/:title
 rdiscount extensions: [smart]
 exclude:

@@ -67,7 +67,8 @@ html,body
 	//styling for code snippets
 	.code-filename
 	{
-    border-radius: 5px 5px 0px 0px;
+		padding-left: 0.5em;
+    	border-radius: 5px 5px 0px 0px;
 		background-color:#292b26;
 		border-color: black;
 		border: 10px;
@@ -78,6 +79,25 @@ html,body
 			background-color:#434739;
 			color:black;
 	}
+	.math-title
+	{
+		color:$textyellow;
+		padding-left: 0.5em;
+		background-color:#292b26;
+		border-color: black;
+		border: 10px;
+    	border-radius: 5px 5px 0px 0px;
+	}
+	.math-highlight
+	{
+		background-color:#434739;
+		border-color: black;
+		border: 10px;
+    	border-radius: 5px 5px 5px 5px;
+		padding-bottom: 0.5em;
+		color:black;
+	}
+ 
   //styling for collapse
   //the part that expands/collapses
   button
